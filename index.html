@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate stunning images using AI. Enter a prompt and let the AI do the rest!">
+    <meta property="og:title" content="AI Image Generator">
+    <meta property="og:description" content="Generate stunning images using AI.">
+    <meta property="og:image" content="/path/to/placeholder-image.png">
+    <meta property="og:url" content="https://your-site.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>AI Image Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-4xl font-bold mb-6">AI Image Generator</h1>
+
+    <div class="w-full max-w-md space-y-4">
+        <input type="text" id="prompt" placeholder="Enter a prompt"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-300" />
+        <button id="generate"
+            class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
+            Generate Image
+        </button>
+    </div>
+
+    <div id="output" class="mt-8 w-full max-w-lg"></div>
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
