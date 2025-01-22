@@ -1,4 +1,4 @@
-async function generateImage() {
+document.getElementById('generate').addEventListener('click', async () => {
     const promptInput = document.getElementById('prompt');
     const outputDiv = document.getElementById('output');
 
@@ -38,6 +38,4 @@ async function generateImage() {
         console.error('Error:', error);
         outputDiv.innerHTML = `<p class="text-red-500">An error occurred. Please try again.</p>`;
     }
-}
-
-document.getElementById('generate').addEventListener('click', generateImage);
+});
